@@ -1,0 +1,170 @@
+{%extends 'main.html'%}
+{% block content %}
+{% load static %}
+
+
+        <!-- SUB HEADER -->
+        <section id="sub-header" class="section bg-parallax pt-0 pb-0"  data-background="{% static 'img/bg/about.jpg' %}">
+            <div class="bg-overlay-black bg-overlay-5"></div>
+            <div class="container">
+                <div class="sub-wrapper">
+                    <br></br >
+            <br></br >
+            <br></br >
+                    <h1>Core Values</h1>
+                    <h2 class="h4">If you’d like to talk to us about a project, or anything else, we’d love to hear from
+                        you.</h2>
+
+                    <div class="breadcrumb-container clearfix">
+                        <span>You are here: </span>
+                        <ul class="breadcrumb">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <!-- <li><a href="#">Page</a></li> -->
+                            <li>Core Values</li>
+                        </ul>
+                    </div><!-- /breadcrumb -->
+                </div><!-- /sub-wrapper -->
+            </div><!-- /container -->
+        </section>
+        <!-- END / SUB HEADER -->
+
+        <!-- CONTENT -->
+        <section class="section bg-white pt-70 pb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-md-push-3 col-sm-12 col-xs-12">
+                        <div id="content" class="site-content">
+                            <main id="main">
+                                <div class="page-grid">
+                                    <!-- GRID 9 COLUMNS -->
+                                    <div class="page-media col-4">
+                                        <img src="{% static 'img/about/2.jpg' %}  " alt="CoreValues" />
+                                    </div><!-- /page-media -->
+
+                                    <div class="page-content col-5">
+                                        <h2 class="section-header">Our core value system</h2>
+                                        <p>At <strong>Al-Banayat Al-Arabia </strong>, we take pride in our commitment to delivering
+                                            exceptional construction solutions across a diverse range of projects. With
+                                            a comprehensive portfolio spanning office buildings, government
+                                            projects, educational facilities, commercial centers, villas,
+                                            residential complexes, and water tank reservoirs, we bring innovation,
+                                            expertise, and dedication to every endeavor.
+                                        </p>
+                                    </div><!-- /page-content -->
+                                </div><!-- /page-grid -->
+
+                                <div class="divider pt-20"></div>
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="cortana-icon">
+                                            <i class="fa fa-anchor"></i>
+                                            <h5 class="text-uppercase">Integrity</h5>
+                                            <p>Our foundation is built on a tradition of ethical and honest business
+                                                conduct, setting the standard for our philosophy and guiding the
+                                                entirety of our organization.
+                                            </p>
+                                        </div><!-- /cortana-icon -->
+
+                                        <div class="cortana-icon">
+                                            <i class="fa fa-users"></i>
+                                            <h5 class="text-uppercase">Staff</h5>
+                                            <p>A skilled and motivated team forms the backbone of our success, aligning
+                                                with our ethical principles to drive the excellence that defines us.
+                                            </p>
+                                        </div><!-- /cortana-icon -->
+
+                                        <div class="cortana-icon">
+                                            <i class="fa fa-building-o"></i>
+                                            <h5 class="text-uppercase">Quality</h5>
+                                            <p>We uphold stringent standards of quality in every aspect of our work,
+                                                ensuring that our projects stand as benchmarks of excellence in the
+                                                construction industry. </p>
+                                        </div><!-- /cortana-icon -->
+
+                                        <div class="cortana-icon">
+                                            <i class="fa fa-heart"></i>
+                                            <h5 class="text-uppercase">Continuos Improvement</h5>
+                                            <p>Committed to perpetual growth, we consistently seek ways to enhance our
+                                                processes, technology, and skills to deliver superior outcomes.
+                                            </p>
+                                        </div><!-- /cortana-icon -->
+                                    </div><!-- /col -->
+
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="cortana-icon">
+                                            <i class="fa fa-eye"></i>
+                                            <h5 class="text-uppercase">Vision</h5>
+                                            <p>We are looking forward to expanding our advanced future business with
+                                                Saudi Arabia’s
+                                                vision of technology, alternative energy and environment-friendly, and
+                                                implementing smart
+                                                ideas that seek to implement Vision 2030 with the participation of
+                                                successful companies in
+                                                order to bring our company to a new level at a new level.
+                                            </p>
+                                        </div><!-- /cortana-icon -->
+
+                                        <div class="cortana-icon">
+                                            <i class="fa fa-shield"></i>
+                                            <h5 class="text-uppercase">Safety</h5>
+                                            <p>The well-being of our team and stakeholders is paramount, and we
+                                                prioritize creating safe environments on every project site.
+
+                                            </p>
+                                        </div><!-- /cortana-icon -->
+
+                                        <div class="cortana-icon">
+                                            <i class="fa fa-rocket"></i>
+                                            <h5 class="text-uppercase">Innovation</h5>
+                                            <p>Embracing creativity and forward-thinking, we integrate innovative
+                                                solutions into our projects, staying at the forefront of industry
+                                                advancements.
+                                            </p>
+                                        </div><!-- /cortana-icon -->
+
+                                        <div class="cortana-icon">
+                                            <i class="fa fa-bar-chart"></i>
+                                            <h5 class="text-uppercase">Operational Excellence</h5>
+                                            <p>We strive for operational perfection, ensuring efficiency, reliability,
+                                                and precision in every aspect of our construction endeavors.
+
+                                            </p>
+                                        </div><!-- /cortana-icon -->
+                                    </div><!-- /col -->
+                                </div><!-- /row -->
+                            </main>
+                        </div><!-- /site-content -->
+                    </div><!-- /col -->
+
+                    <div class="col-md-3 col-md-pull-9 col-sm-12 col-xs-12">
+                        <div id="sidebar" class="sidebar">
+                            <div id="widget-area">
+                                <aside class="widget widget_linklist">
+                                    <ul>
+                                        <li ><a href="{%url 'about' %}"
+                                                class="btn btn-gray fullwidth text-left">Who We Are</a></li>
+                                        <li><a href="{%url 'history' %}" class="btn btn-gray fullwidth text-left">History</a>
+                                        </li>
+                                        <li><a href="{%url 'leaders' %}" class="btn btn-gray fullwidth text-left">Leader
+                                                Team</a></li>
+                                        <li class="active"><a href="{%url 'values' %}" class="btn btn-gray fullwidth text-left">Core
+                                                 Values</a></li>
+                                        <li><a href="{%url 'clients' %}" class="btn btn-gray fullwidth text-left">Our
+                                                Clients</a></li>
+                                        <li><a href="{%url 'certifications' %}"
+                                                class="btn btn-gray fullwidth text-left">Certifications</a></li>
+                                        <li><a href="{%url 'faq' %}" class="btn btn-gray fullwidth text-left">F.A.Q</a></li>
+                                    </ul>
+                                </aside><!-- /widget_linklist -->
+                                   
+                            </div><!-- /widget-area -->
+                        </div><!-- /sidebar -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </section>
+        <!-- END / CONTENT -->
+
+
+{% endblock content %}

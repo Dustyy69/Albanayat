@@ -1,0 +1,132 @@
+{%extends 'main.html'%}
+{% block content %}
+{% load static %}
+
+    <section id="sub-header" class="section bg-parallax pt-0 pb-0"  data-background="{% static 'img/bg/about.jpg' %}">
+        <div class="bg-overlay-black bg-overlay-5"></div>
+        <div class="container">
+            <div class="sub-wrapper">
+                <br></br >
+            <br></br >
+            <br></br >
+                <h1>History</h1>
+                <h2 class="h4">If you’d like to talk to us about a project, or anything else, we’d love to hear from you.</h2>
+
+                <div class="breadcrumb-container clearfix">
+                    <span>You are here: </span>
+                    <ul class="breadcrumb">
+                        <li><a href="{% url 'home'%}">Home</a></li>
+                        <li>History</li>
+                    </ul>
+                </div><!-- /breadcrumb -->
+            </div><!-- /sub-wrapper -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / SUB HEADER -->
+
+    <!-- CONTENT -->
+    <section class="section bg-white pt-70 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3 col-sm-12 col-xs-12">
+                    <div id="content" class="site-content">
+                        <main id="main">
+                            <h2 class="section-header">History</h2>
+                            <p>With a proud legacy spanning 35 years, <strong>Al-Banayat Al-Arabia </strong> has grown to become a leading contracting company in the Kingdom. Our workforce supports our vision of providing valuable services, building community partnerships, and delivering important projects such as schools, hospitals, workplaces, government facilities, and social and cultural centers.</p>
+                            <br />
+                            <br />
+
+
+                            <h3 class="page-title">1987- Start with a small service</h3>
+                            <div class="page-grid">
+                                <!-- GRID 9 COLUMNS -->
+                                <div class="page-media col-2 static">
+                                    <img src="img/history/1.jpg" alt="" />
+                                </div><!-- /page-media -->
+
+                                <div class="page-content col-7">
+                                    <p>BuildPress Inc traces its roots back to 1989 in Colorado and since then have never looked back. With thousands of successful projects under our belt, we can proudly say that we are one of the most trusted construction companies in Colorado performing both domestic and international construction work</p>
+                                </div><!-- /page-content -->
+                            </div><!-- /page-grid -->
+
+                            <h3 class="page-title">2000 - Find investor for our project</h3>
+                            <div class="page-grid">
+                                <!-- GRID 9 COLUMNS -->
+                                <div class="page-media col-2 static">
+                                    <img src="img/history/2.jpg" alt="" />
+                                </div><!-- /page-media -->
+
+                                <div class="page-content col-7">
+                                    <p>Ask ten architects to design a project and you’ll get ten completely different designs. These designs (and their budgets and construction limitations) could make your project a resounding success or could make it something less than successful.</p>
+                                </div><!-- /page-content -->
+                            </div><!-- /page-grid -->
+
+                            <h3 class="page-title">2005 - Reach 100 employees milestone</h3>
+                            <div class="page-grid">
+                                <!-- GRID 9 COLUMNS -->
+                                <div class="page-media col-2 static">
+                                    <img src="img/history/3.jpg" alt="" />
+                                </div><!-- /page-media -->
+
+                                <div class="page-content col-7">
+                                    <p>Each architecture firm is structured differently, has varied design aesthetic preferences, and is skilled at different subsets of the profession. While not exhaustive, here are a few ways to better understand who might be the best architect for your next project.</p>
+                                </div><!-- /page-content -->
+                            </div><!-- /page-grid -->
+
+                            <h3 class="page-title">2010 - Reach 10.000 clients milestone</h3>
+                            <div class="page-grid">
+                                <!-- GRID 9 COLUMNS -->
+                                <div class="page-media col-2 static">
+                                    <img src="img/history/4.jpg" alt="" />
+                                </div><!-- /page-media -->
+
+                                <div class="page-content col-7">
+                                    <p>Unless you are dead-set on a specific architect/firm, multiple quotes give you the best understanding for how competitive the market is for architectural design services. Each firm will likely quote different services involved in their work. So, as best as you can, get an apples-to-apples comparison of the quotes submitted based on the services provided.</p>
+                                </div><!-- /page-content -->
+                            </div><!-- /page-grid -->
+
+                            <h3 class="page-title">2015 - Open 3 offices at California, Las Vegas and Washington</h3>
+                            <div class="page-grid">
+                                <!-- GRID 9 COLUMNS -->
+                                <div class="page-media col-2 static">
+                                    <img src="img/history/5.jpg" alt="" />
+                                </div><!-- /page-media -->
+
+                                <div class="page-content col-7">
+                                    <p>Four teams have been chosen to move on to the second stage of the Pershing Square Renew competition. Aiming to transform downtown Los Angeles' oldest park, the finalists will now refine their schematic proposals in preparation of a second review in March 2016. The winning scheme will potentially be the five-acre park's sixth iteration, replacing Mexican architect Ricardo Legorreta and landscape architect Laurie Olin current design that first opened in 1994. </p>
+                                </div><!-- /page-content -->
+                            </div><!-- /page-grid -->
+                        </main>
+                    </div><!-- /site-content -->
+                </div><!-- /col -->
+
+                <div class="col-md-3 col-md-pull-9 col-sm-12 col-xs-12">
+                    <div id="sidebar" class="sidebar">
+                        <div id="widget-area">
+                            <aside class="widget widget_linklist">
+                                <ul>
+                                    <li ><a href="{%url 'about' %}"
+                                            class="btn btn-gray fullwidth text-left">Who We Are</a></li>
+                                    <li class="active"><a href="{%url 'history' %}" class="btn btn-gray fullwidth text-left">History</a>
+                                    </li>
+                                    <li><a href="{%url 'leaders' %}" class="btn btn-gray fullwidth text-left">Leader
+                                            Team</a></li>
+                                    <li><a href="{%url 'values' %}" class="btn btn-gray fullwidth text-left">Core
+                                            Values</a></li>
+                                    <li><a href="{%url 'clients' %}" class="btn btn-gray fullwidth text-left">Our
+                                            Clients</a></li>
+                                    <li><a href="{%url 'certifications' %}"
+                                            class="btn btn-gray fullwidth text-left">Certifications</a></li>
+                                    <li><a href="{%url 'faq' %}" class="btn btn-gray fullwidth text-left">F.A.Q</a></li>
+                                </ul>
+                            </aside><!-- /widget_linklist -->
+
+                        </div><!-- /widget-area -->
+                    </div><!-- /sidebar -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / CONTENT -->
+
+{% endblock content %}

@@ -1,0 +1,63 @@
+{%extends 'main.html'%}
+{% block content %}
+{% load static %}
+
+<section id="sub-header" class="section bg-parallax pt-0 pb-0" data-background="{% static 'img/bg/about.jpg' %}">
+    <div class="bg-overlay-black bg-overlay-5"></div>
+    <div class="container">
+        <div class="sub-wrapper">
+            <br></br >
+            <br></br >
+            <br></br >
+            <h1>Services</h1>
+            <h2 class="h4">If you’d like to talk to us about a project, or anything else, we’d love to hear from you.</h2>
+
+            <div class="breadcrumb-container clearfix">
+                <span>You are here: </span>
+                <ul class="breadcrumb">
+                    <li><a href="{%url 'home'%}">Home</a></li>
+                    <!-- <li><a href="#">Page</a></li> -->
+                    <li>Services</li>
+                </ul>
+            </div><!-- /breadcrumb -->
+        </div><!-- /sub-wrapper -->
+    </div><!-- /container -->
+</section>
+<!-- END / SUB HEADER -->
+
+<!-- CONTENT -->
+<section class="section bg-white pt-60 pb-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-header">Building Engineering</h2>
+                <div class="post-thumbnail hover-link">
+                    <img src="{%static 'img/service/1.jpg'%}" alt="" />
+                    <!-- <a href="service-single.html" class="overlay"><i class="fa fa-link"></i></a> -->
+                </div><!--/ post-thumbnail -->
+                <div class="mb-30">
+                    <p> Elevate your projects with Al-banayat Al-Arabia Building Engineering. From concept to completion, we deliver excellence in design, construction, and maintenance. Discover efficiency, sustainability, and safety in every solution. Let's build success together! </p>
+                </div>
+                <!-- <a href="service-single.html" class="btn btn-primary radius mb-30">Read more</a> -->
+            </div><!-- /col -->
+
+            <div class="col-md-6">
+                <h2 class="section-header">Construction Services</h2>
+                <div class="post-thumbnail hover-link">
+                    <img src="{%static 'img/service/2.jpg'%}" alt="" />
+                    <!-- <a href="service-single.html" class="overlay"><i class="fa fa-link"></i></a> -->
+                </div><!--/ post-thumbnail -->
+                <div class="mb-30">
+                    <p> Experience excellence with Al-Banayat Al-Arabia Construction Services! From blueprints to reality, we're committed to quality craftsmanship and timely delivery. Let's turn your dreams into structures that stand the test of time!</p>
+                </div>
+                <!-- <a href="service-single.html" class="btn btn-primary radius mb-30">Read more</a> -->
+            </div><!-- /col -->
+        </div><!-- /row -->
+
+        <div class="divider pt-20"></div>
+
+        <!-- /row -->
+    </div><!-- /container -->
+</section>
+<!-- END / CONTENT -->
+{% endblock content %}

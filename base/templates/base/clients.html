@@ -1,0 +1,95 @@
+{%extends 'main.html'%}
+{% block content %}
+{% load static %}
+
+
+<!-- SUB HEADER -->
+<section id="sub-header" class="section bg-parallax pt-0 pb-0" data-background="{% static 'img/bg/about.jpg' %}">
+    <div class="bg-overlay-black bg-overlay-5"></div>
+    <div class="container">
+        <div class="sub-wrapper">
+            <br><br><br>
+            <h1>Clients</h1>
+            <h2 class="h4">If you’d like to talk to us about a project, or anything else, we’d love to hear from you.
+            </h2>
+
+            <div class="breadcrumb-container clearfix">
+                <span>You are here: </span>
+                <ul class="breadcrumb">
+                    <li><a href="{%  url 'home'%}">Home</a></li>
+                    <!-- <li><a href="#">Page</a></li> -->
+                    <li>Partner</li>
+                </ul>
+            </div><!-- /breadcrumb -->
+        </div><!-- /sub-wrapper -->
+    </div><!-- /container -->
+</section>
+<!-- END / SUB HEADER -->
+
+<!-- CONTENT -->
+<section class="section bg-white pt-70 pb-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-md-push-3 col-sm-12 col-xs-12">
+                <div id="content" class="site-content">
+                    <main id="main">
+                        <h2 class="section-header">ELITE CLIENT PORTFOLIO: PARTNERS OF PRESTIGE WITH ALBANAYAT AL ARABIA</h2>
+                        <p>Albanayat Al-Arabia, a leading construction company in Saudi Arabia, proudly caters to a distinguished clientele, which includes notable entities such as the Saudi Electricity Company, Ministry of Municipal Rural Affairs & Housing, Ministry of Environment, Water & Agriculture, Ministry of Education, National Water Company, Ardara, Soudah Development, Royal Commission for Jubail and Yanbu, Saudi Irrigation Organization, and Saline Water Conversion Corporation (SWCC). With our unwavering commitment to excellence and profound expertise in construction and project management, we consistently deliver tailored solutions that meet and exceed the unique requirements of each client, ensuring exceptional outcomes every time.<br><br>
+                        <br />
+                        <br />
+
+                        <div class="row">
+                            {% for client in clients %}
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-30">
+                                <div class="client-logo">
+                                    <img src="../{{client.logo}}" alt="Client Logo" />
+                                </div><!-- /client-logo -->
+                            </div><!-- /col -->
+                            {%endfor%}
+                        </div><!-- /row -->
+
+                        <div class="divider pt-10"></div>
+
+                        <h2 class="section-header">DRIVING SUCCESS: ALBANAYAT AL-ARABIA'S VISION FOR INNOVATION AND QUALITY
+
+                        </h2>
+                        <p>At Albanayat Al-Arabia, we pride ourselves not only on our esteemed clientele but also on our unwavering commitment to quality, innovation, and sustainability in every project we undertake. With a dedicated team of professionals and a track record of successful ventures, we continuously strive to set new benchmarks in the construction industry. Our core values of integrity, excellence, and client satisfaction drive us to exceed expectations, ensuring that each endeavor is completed with precision and distinction. From groundbreaking infrastructure projects to intricate architectural masterpieces, we approach every challenge with enthusiasm and expertise, ensuring the realization of our clients' visions while contributing positively to the communities we serve.
+                        </p>
+
+                    </main>
+                </div><!-- /site-content -->
+            </div><!-- /col -->
+
+
+            <div class="col-md-3 col-md-pull-9 col-sm-12 col-xs-12">
+                <div id="sidebar" class="sidebar">
+                    <div id="widget-area">
+                        <aside class="widget widget_linklist">
+                            <ul>
+                                <li><a href="{%url 'about' %}" class="btn btn-gray fullwidth text-left">Who We Are</a>
+                                </li>
+                                <li><a href="{%url 'history' %}" class="btn btn-gray fullwidth text-left">History</a>
+                                </li>
+                                <li><a href="{%url 'leaders' %}" class="btn btn-gray fullwidth text-left">Leader
+                                        Team</a></li>
+                                <li><a href="{%url 'values' %}" class="btn btn-gray fullwidth text-left">Core
+                                        Values</a></li>
+                                <li class="active"><a href="{%url 'clients' %}"
+                                        class="btn btn-gray fullwidth text-left">Our
+                                        Clients</a></li>
+                                <li><a href="{%url 'certifications' %}"
+                                        class="btn btn-gray fullwidth text-left">Certifications</a></li>
+                                <li><a href="{%url 'faq' %}" class="btn btn-gray fullwidth text-left">F.A.Q</a></li>
+                            </ul>
+                        </aside><!-- /widget_linklist -->
+
+                    </div><!-- /widget-area -->
+                </div><!-- /sidebar -->
+            </div><!-- /col -->
+        </div><!-- /row -->
+
+    </div><!-- /container -->
+</section>
+<!-- END / CONTENT -->
+
+{% endblock content %}

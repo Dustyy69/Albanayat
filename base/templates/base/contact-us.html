@@ -1,0 +1,92 @@
+{%extends 'main.html'%}
+{% block content %}
+{% load static %}
+ 
+   <!-- SUB HEADER -->
+    <section id="sub-header" class="section bg-parallax pb-0" data-background="{% static 'img/bg/about.jpg' %}">
+        <div class="bg-overlay-black bg-overlay-5"></div>
+        <div class="container">
+            <div class="sub-wrapper">
+                <br></br >
+            <br></br >
+            <br></br >
+                <h1>Contact us</h1>
+                <h2 class="h4">If you’d like to talk to us about a project, or anything else, we’d love to hear from you.</h2>
+
+                <div class="breadcrumb-container clearfix">
+                    <span>You are here: </span>
+                    <ul class="breadcrumb">
+                        <li><a href="{%url 'home'%}">Home</a></li>
+                        <!-- <li><a href="#">Page</a></li> -->
+                        <li>Contact</li>
+                    </ul>
+                </div><!-- /breadcrumb -->
+            </div><!-- /sub-wrapper -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / SUB HEADER -->
+
+    <!-- CONTENT -->
+    <section class="section bg-white pt-50 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div id="content" class="site-content">
+                        <main id="main">
+                            <p>We're here to help! Have a question, comment, or concern? Don't hesitate to reach out to us. Fill out the form below, and we'll get back to you as soon as possible. Your satisfaction is our priority. </p>
+
+                            <br />
+
+                            <form id="contact-form"  method="post">
+                                {%csrf_token%}
+                                <div class="group clearfix">
+                                    <div class="group-item mb-30">
+                                        <input type="text" name="name" placeholder="Name" />
+                                    </div><!-- /group-item -->
+
+                                    <div class="group-item mb-30">
+                                        <input type="text" name="subject" placeholder="Subject" />
+                                    </div><!-- /group-item -->
+                                </div><!-- /group -->
+
+                                <input type="email" name="email" placeholder="Email" class="mb-30" />
+
+                                <textarea name="message" placeholder="Message"></textarea>
+                                {% if messages %}
+                                    <ul class="messages">
+                                        {% for message in messages %}
+                                        <li>{{ message }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                                <button type="submit" class="btn btn-primary radius">Send message</button>
+                                <div id="contact-content" style="padding-top: 20px"></div>
+                            </form>
+                        </main>
+                    </div><!-- /site-content -->
+                </div><!-- /col -->
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div id="sidebar" class="sidebar">
+                        <div id="widget-area">
+                            <aside class="widget widget_text">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.889383668591!2d42.71104394823344!3d18.30666613839333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15fb5a02fd3dd83f%3A0x5774a5ddee8958e9!2s8711%20King%20Fahd%20Rd%2C%20Al%20Humaylah%2C%20Khamis%20Mushait%2062461%2C%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1711677571645!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                            </aside><!-- /widget_text -->
+
+                            <aside class="widget widget_contact">
+                                <ul>
+                                    <li><i class="fa fa-map-marker"></i> 8711 King Fahd Rd, Al Muntazah، AKPB2842، 2842, Khamis Mushait. Saudi Arabia</li>
+                                    <li><i class="icon icon-phone"></i> 0172358939</li>
+                                    <li><i class="fa fa-mobile"></i>0503861293</li>
+                                    <li><i class="icon icon-clock"></i>Sat - Thursday: 9:00 - 18:00</li>
+                                </ul>
+                            </aside><!-- /widget_contact -->
+                        </div><!-- /widget-area -->
+                    </div><!-- /sidebar -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / CONTENT -->
+
+    <!-- END / CONTENT -->
+    {% endblock content %}

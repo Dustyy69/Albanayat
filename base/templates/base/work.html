@@ -1,0 +1,54 @@
+{%extends 'main.html'%}
+{% block content %}
+{% load static %}
+
+<!-- SUB HEADER -->
+    <section id="sub-header" class="section bg-parallax pt-0 pb-0" data-background="{% static 'img/bg/about.jpg' %}">
+        <div class="bg-overlay-black bg-overlay-5"></div>
+        <div class="container">
+            <div class="sub-wrapper">
+                <br></br >
+            <br></br >
+            <br></br >
+                <h1>Our Work</h1>
+                <h2 class="h4">If you’d like to talk to us about a project, or anything else, we’d love to hear from you.</h2>
+                
+                <div class="breadcrumb-container clearfix">
+                    <span>You are here: </span>
+                    <ul class="breadcrumb">
+                        <li><a href="{%url 'home'%}">Home</a></li>
+                        <li>Our Work</li>
+                    </ul>
+                </div><!-- /breadcrumb -->
+            </div><!-- /sub-wrapper -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / SUB HEADER -->
+
+    <!-- PORTFOLIO 1 -->
+    <section class="section pt-60 pb-60 bg-white">
+        <div class="container">
+           
+
+            <div class="isotope-grid-wrapper" data-isotope-column="3" data-column-gap="30" data-column-md="3" data-column-sm="2" data-column-xs="1" data-column-tn="1">
+                <div class="isotope-grid-row">
+                    <div class="isotope-grid">
+                        <div class="grid-sizer"></div>
+                        <!-- <div class="gutter-sizer"></div> -->
+                        {%for p in projects%}
+                        <div class="portfolio-item office">
+                            <div class="portfolio-media hover-link">
+                                <img src="../../{{p.picture}}" alt="" />
+                                <!-- <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a> -->
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">{{p.name}}</a></h5>
+                        </div><!-- /portfolio-item -->
+                        {%endfor%}
+
+                    </div><!-- /isotope-grid -->
+                </div><!-- /isotope-grid-row -->
+            </div><!-- /isotope-grid-wrapper -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / PORTFOLIO 1 -->
+    {% endblock content %}

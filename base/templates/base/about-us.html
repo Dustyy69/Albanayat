@@ -1,0 +1,190 @@
+{%extends 'main.html'%}
+{% block content %}
+{% load static %}
+
+
+
+
+
+
+<!-- SUB HEADER -->
+<section id="sub-header" class="section bg-parallax pt-0 pb-0" data-background="{% static 'img/bg/about.jpg' %}">
+    <div class="bg-overlay-black bg-overlay-5"></div>
+    <div class="container">
+        <div class="sub-wrapper">  
+            <br></br >
+            <br></br >
+            <br></br >
+            <h1>About Us</h1>
+            <h2 class="h4">If you’d like to talk to us about a project, or anything else, we’d love to hear from you.
+            </h2>
+
+            <div class="breadcrumb-container clearfix">
+                <span>You are here: </span>
+                <ul class="breadcrumb">
+                    <li><a href="{%url 'home'%}">Home</a></li>
+                    <li>About Us</li>
+                </ul>
+            </div><!-- /breadcrumb -->
+        </div><!-- /sub-wrapper -->
+    </div><!-- /container -->
+</section>
+<!-- END / SUB HEADER -->
+
+<!-- CONTENT -->
+<section class="section bg-white pt-70 pb-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-md-push-3 col-sm-12 col-xs-12">
+                <div id="content" class="site-content">
+                    <main id="main">
+                        <div class="page-grid">
+                            <!-- GRID 9 COLUMNS -->
+                            <div class="page-content col-5 col-push-4">
+                                <h2 class="section-header">Who we are?</h2>
+                                <p>Established in 1408 AH in the Khamis Mushayt area, <strong>Al-Banayat Al-Arabia </strong> is a
+                                    construction company specializing in general contracting, construction
+                                    management, design, and construction. We transform visions into reality,
+                                    working as a family with a commitment to building projects that meet high
+                                    standards of quality and value.</p>
+                                <br />
+                                <p>With a proud legacy spanning <strong>35 years</strong>, <strong>Al-Banayat Al-Arabia </strong>
+                                    has grown to
+                                    become a leading contracting company in the Kingdom. Our workforce supports
+                                    our vision of providing valuable services, building community partnerships,
+                                    and delivering important projects such as schools, hospitals, workplaces,
+                                    government facilities, and social and cultural centers.</p>
+                                <br>
+                                <p>The owner of the company is <strong>Ibrahim Saad Al Sherani</strong>. He has laid
+                                    down the foundation of the company with a clear vision and commitment to excellence.
+                                </p>
+                            </div><!-- /page-content -->
+
+                            <div class="page-media col-4 col-pull-5">
+                                <img src="{% static 'img/about/1.jpg'%}" alt="" />
+
+                            </div><!-- /page-media -->
+                        </div><!-- /page-grid -->
+
+                        <div class="divider pt-20"></div>
+
+                        <h2 class="section-header">What we do</h2>
+                        <h4>Our Expertise Encompasses:</h4> <br>
+                        <p> <strong>Office Buildings:</strong>
+                            Our expertise extends to the design and construction of modern and efficient office
+                            spaces that meet the evolving needs of businesses.<br>
+                            <strong>Government Projects:</strong>
+                            <strong>Al-Banayat Al-Arabia </strong> has a proven track record in successfully executing government
+                            projects, contributing to the development of essential infrastructure. <br>
+                            <strong>Educational Facilities and Schools/Universities:</strong>
+                            We are dedicated to creating conducive environments for learning by constructing
+                            educational facilities, schools, and universities that inspire growth and knowledge.
+                            <br>
+                            <strong>Tunnels:</strong>
+                            Our engineering prowess shines in the construction of tunnels,
+                            facilitating smooth and efficient transportation networks.
+                            <br><strong>Commercial Centers:</strong>
+                            <strong>Al-Banayat Al-Arabia </strong> brings creativity and functionality to commercial spaces,
+                            contributing to vibrant and thriving commercial centers. <br>
+                            <strong>Villas & Residential Complexes:</strong>
+                            We take pride in crafting luxurious villas and well-planned residential complexes
+                            that prioritize comfort, aesthetics, and community living.
+                            <br> <strong>Water Tank Reservoirs:</strong>
+                            Our commitment to water management is evident in the construction of robust and
+                            efficient water tank reservoirs, ensuring a sustainable supply for communities.
+                            <br>At <strong>Al-Banayat Al-Arabia ,</strong> our comprehensive construction
+                            services embody our
+                            dedication to excellence in every project we undertake. We strive to exceed
+                            expectations, delivering enduring infrastructure that stands as a testament to our
+                            commitment to quality and innovation.
+                        </p>
+                        <br />
+
+                        <div class="portfolio portfolio-col-3">
+                            <div class="portfolio-item office">
+                                <div class="portfolio-media hover-link">
+                                    <img src="img/portfolio/1big.jpg" alt="" />
+                                    <a href="#" class="overlay"><i class="fa fa-link"></i></a>
+                                </div><!-- /hover-link -->
+                                <h5 class="text-uppercase text-center">Office Buildings</h5>
+                            </div><!-- /portfolio-item -->
+
+                            <div class="portfolio-item building">
+                                <div class="portfolio-media hover-link">
+                                    <img src="img/portfolio/2big.jpg" alt="" />
+                                    <a href="#" class="overlay"><i class="fa fa-link"></i></a>
+                                </div><!-- /hover-link -->
+                                <h5 class="text-uppercase text-center">Government Projects</h5>
+                            </div><!-- /portfolio-item -->
+
+                            <div class="portfolio-item museum">
+                                <div class="portfolio-media hover-link">
+                                    <img src="img/portfolio/3big.jpg" alt="" />
+                                    <a href="#" class="overlay"><i class="fa fa-link"></i></a>
+                                </div><!-- /hover-link -->
+                                <h5 class="text-uppercase text-center">Educational Facilities and Schools/Universities
+                                </h5>
+                            </div><!-- /portfolio-item -->
+
+                            <div class="portfolio-item building">
+                                <div class="portfolio-media hover-link">
+                                    <img src="img/portfolio/4big.jpg" alt="" />
+                                    <a href="#" class="overlay"><i class="fa fa-link"></i></a>
+                                </div><!-- /hover-link -->
+                                <h5 class="text-uppercase text-center">Commercial Centers</h5>
+                            </div><!-- /portfolio-item -->
+
+                            <div class="portfolio-item urban">
+                                <div class="portfolio-media hover-link">
+                                    <img src="img/portfolio/5big.jpg" alt="" />
+                                    <a href="#" class="overlay"><i class="fa fa-link"></i></a>
+                                </div><!-- /hover-link -->
+                                <h5 class="text-uppercase text-center">Villas & Residential Complexes</h5>
+                            </div><!-- /portfolio-item -->
+
+                            <div class="portfolio-item museum">
+                                <div class="portfolio-media hover-link">
+                                    <img src="img/portfolio/6big.jpg" alt="" />
+                                    <a href="#" class="overlay"><i class="fa fa-link"></i></a>
+                                </div><!-- /hover-link -->
+                                <h5 class="text-uppercase text-center">Water Tank Reservoirs</h5>
+                            </div><!-- /portfolio-item -->
+                        </div><!-- /portfolio -->
+                    </main>
+                </div><!-- /site-content -->
+            </div><!-- /col -->
+
+
+
+            <div class="col-md-3 col-md-pull-9 col-sm-12 col-xs-12">
+                <div id="sidebar" class="sidebar">
+                    <div id="widget-area">
+                        <aside class="widget widget_linklist">
+                            <ul>
+                                <li class="active"><a href="{%url 'about' %}"
+                                        class="btn btn-gray fullwidth text-left">Who We Are</a></li>
+                                <li><a href="{%url 'history' %}" class="btn btn-gray fullwidth text-left">History</a>
+                                </li>
+                                <li><a href="{%url 'leaders' %}" class="btn btn-gray fullwidth text-left">Leader
+                                        Team</a></li>
+                                <li><a href="{%url 'values' %}" class="btn btn-gray fullwidth text-left">Core
+                                        Values</a></li>
+                                <li><a href="{%url 'clients' %}" class="btn btn-gray fullwidth text-left">Our
+                                        Clients</a></li>
+                                <li><a href="{%url 'certifications' %}"
+                                        class="btn btn-gray fullwidth text-left">Certifications</a></li>
+                                <li><a href="{%url 'faq' %}" class="btn btn-gray fullwidth text-left">F.A.Q</a></li>
+                            </ul>
+                        </aside><!-- /widget_linklist -->
+
+
+
+                        
+                    </div><!-- /widget-area -->
+                </div><!-- /sidebar -->
+            </div><!-- /col -->
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+<!-- END / CONTENT -->
+{% endblock content %}

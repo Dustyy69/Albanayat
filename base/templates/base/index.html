@@ -1,0 +1,375 @@
+{%extends 'main.html'%}
+{% block content %}
+{% load static %}
+
+
+<!-- HEADER 1 -->
+
+<!-- END / HEADER 1 -->
+
+    <!-- HOME MEDIA -->
+    <section id="home-media" class="section pt-0 pb-0" data-home-media="800">
+        <div class="tp-banner-container">
+            <div class="tp-banner" >
+                <ul>
+                    <!-- SLIDE 1  -->
+                    <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="{% static 'img/slider/thumb/thumb3.jpg'%}"  data-saveperformance="on" data-title="Slider 1">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static 'img/slider/slide-1.jpg'%}"  alt="slidebg1" data-lazyload="{% static 'img/slider/slide-1.jpg'%}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption grey_heavy_72 lfl tp-resizeme rs-parallaxlevel-0 tp-headline"
+                            data-x="center"
+                            data-y="330"
+                            data-speed="500"
+                            data-start="1350"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="lines"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">We are more than builders
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption grey_heavy_72 lfr tp-resizeme rs-parallaxlevel-0 tp-headline-3"
+                            data-x="center"
+                            data-y="400"
+                            data-speed="500"
+                            data-start="1650"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="lines"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">We are construction partners
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption grey_heavy_72 fade tp-resizeme rs-parallaxlevel-0"
+                            data-x="center"
+                            data-y="470"
+                            data-speed="500"
+                            data-start="2550"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><a href="{% url 'about' %}" class='btn btn-transparent radius'>Who we are</a>
+                        </div>
+                    </li>
+                    <!-- SLIDE 2 -->
+                    <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="{% static 'img/slider/thumb/thumb-1.jpg'%}"  data-saveperformance="on"  data-title="Slider 2">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static 'img/slider/slide-2.jpg'%}"  alt="slidebg1" data-lazyload="{% static 'img/slider/slide-2.jpg'%}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline"
+                            data-x="left"
+                            data-y="310"
+                            data-hoffset="15"
+                            data-speed="500"
+                            data-start="1050"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="lines"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">We take care of everything
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-description"
+                            data-x="left"
+                            data-y="370"
+                            data-hoffset="15"
+                            data-speed="500"
+                            data-start="1350"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="lines"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">ReStructure is managed by a staff with over 30 years of renovation experience and supported
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-description"
+                            data-x="left"
+                            data-y="410"
+                            data-hoffset="15"
+                            data-speed="500"
+                            data-start="1350"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="lines"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">by the same systems.
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption grey_heavy_72 sfl tp-resizeme rs-parallaxlevel-0"
+                            data-x="left"
+                            data-y="470"
+                            data-hoffset="15"
+                            data-speed="500"
+                            data-start="2050"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><a href="{% url 'about' %}" class='btn btn-primary mr-10'>Who we are</a>  
+                        </div>
+                    </li>
+
+                    <!-- SLIDE 3 -->
+                    <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="img/slider/thumb/thumb-2.jpg"  data-saveperformance="on"  data-title="Slider 3">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static 'img/slider/slide-3.jpg'%}"  alt="slidebg1" data-lazyload="{% static 'img/slider/slide-3.jpg'%}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-3"
+                            data-x="center"
+                            data-y="310"
+                            data-speed="500"
+                            data-start="1050"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="lines"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">We are more than builders - We are construction partners
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-headline-2"
+                            data-x="center"
+                            data-y="380"
+                            data-speed="500"
+                            data-start="1350"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="lines"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">Welcome to Al-Banayat Al-Arabia </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption grey_heavy_72 sfl tp-resizeme rs-parallaxlevel-0"
+                            data-x="center"
+                            data-y="460"
+                            data-hoffset="-83"
+                            data-speed="500"
+                            data-start="2050"
+                            data-easing="Power3.easeInOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.1"
+                            data-endelementdelay="0.1"
+                            style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;"><a href="{% url 'about' %}" class='btn btn-primary'>Who we are</a>
+                        </div>
+
+                    </li>
+                </ul>
+                <div class="tp-bannertimer"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-white bd-b pt-60 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="mb-30">
+                        <img src="{% static 'img/about/1.jpg'%}" alt="About" />
+                    </div>
+                </div><!-- /col -->
+
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h2 class="section-header big">Who we are?</h2>
+                    <div class="mb-30">
+                        <p>Established in 1408 AH in the Khamis Mushayt area, <strong>Al-Banayat Al-Arabia </strong> is a construction
+                            company specializing in general contracting, construction management, design, and
+                            construction. We transform visions into reality, working as a family with a commitment
+                            to building projects that meet high standards of quality and value.. </p>
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / ABOUT -->
+
+    <!-- SERVICE -->
+    <section class="section bg-gray pt-60 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section-header">Building Engineering</h2>
+                    <div class="post-thumbnail hover-link">
+                        <img src="img/service/1.jpg" alt="" />
+                        <a href="service-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                    </div><!--/ post-thumbnail -->
+
+                    <div class="mb-30">
+                        <p> Elevate your projects with Al-banayat Al-Arabia Building Engineering. From concept to completion, we deliver excellence in design, construction, and maintenance. Discover efficiency, sustainability, and safety in every solution. Let's build success together! </p>
+                    </div>
+                    <!-- <a href="service-single.html" class="btn btn-primary radius mb-30">Read more</a> -->
+                </div><!-- /col -->
+
+                <!-- <div class="col-md-">
+                    <h2 class="section-header">Architecture</h2>
+                    <div class="post-thumbnail hover-link">
+                        <img src="img/service/2.jpg" alt="" />
+                        <a href="service-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                    </div> -->
+                    <!--/ post-thumbnail -->
+                    <!-- <div class="mb-30">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</p>
+                    </div>
+                    <a href="service-single.html" class="btn btn-primary radius mb-30">Read more</a>
+                </div> -->
+                <!-- /col -->
+
+                <div class="col-md-6">
+                    <h2 class="section-header">Construction Services</h2>
+                    <div class="post-thumbnail hover-link">
+                        <img src="img/service/3.jpg" alt="" />
+                        <a href="service-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                    </div><!--/ post-thumbnail -->
+                    <div class="mb-30">
+                        <p> Experience excellence with Al-Banayat Al-Arabia Construction Services! From blueprints to reality, we're committed to quality craftsmanship and timely delivery. Let's turn your dreams into structures that stand the test of time!</p>
+                    </div>
+                    <!-- <a href="service-single.html" class="btn btn-primary radius mb-30">Read more</a> -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / SERVICE -->
+
+    <!-- PORTFOLIO 1 -->
+    <section class="section bg-parallax pt-60 pb-60" data-background="img/bg/portfolio.jpg">
+        <div class="bg-overlay-black bg-overlay-7"></div>
+        <div class="container">
+            <h2 class="section-header big" data-section-center="991">Our Work</h2>
+            <!-- FILTER -->
+            <!-- <ul class="portfolio-selector filters" data-portfolio-type="991">
+                <li><a href="#" data-filter="*">All</a></li>
+                <li><a href="#" data-filter=".office">Office</a></li>
+                <li><a href="#" data-filter=".building">Building</a></li>
+                <li><a href="#" data-filter=".museum">Museum</a></li>
+                <li><a href="#" data-filter=".urban">Urban</a></li>
+                <li><a href="#" data-filter=".house">House</a></li>
+            </ul>/portfolio-selector -->
+            <!-- END / FILTER -->
+
+            <div class="isotope-grid-wrapper" data-isotope-column="4" data-column-gap="30" data-column-md="3" data-column-sm="2" data-column-xs="1" data-column-tn="1">
+                <div class="isotope-grid-row">
+                    <div class="isotope-grid">
+                        <div class="grid-sizer"></div>
+                        <!-- <div class="gutter-sizer"></div> -->
+
+                        <div class="portfolio-item office">
+                            <div class="portfolio-media hover-link">
+                                <img src="img/portfolio/1big.jpg" alt="" />
+                                <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">Building Engineering</a></h5>
+                        </div><!-- /portfolio-item -->
+
+                        <div class="portfolio-item building">
+                            <div class="portfolio-media hover-link">
+                                <img src="img/portfolio/2big.jpg" alt="" />
+                                <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">Building Engineering</a></h5>
+                        </div><!-- /portfolio-item -->
+
+                        <div class="portfolio-item museum">
+                            <div class="portfolio-media hover-link">
+                                <img src="img/portfolio/3big.jpg" alt="" />
+                                <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">Architecture</a></h5>
+                        </div><!-- /portfolio-item -->
+
+                        <div class="portfolio-item building">
+                            <div class="portfolio-media hover-link">
+                                <img src="img/portfolio/4big.jpg" alt="" />
+                                <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">Construction Services</a></h5>
+                        </div><!-- /portfolio-item -->
+
+                        <div class="portfolio-item urban">
+                            <div class="portfolio-media hover-link">
+                                <img src="img/portfolio/5big.jpg" alt="" />
+                                <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">Building Engineering</a></h5>
+                        </div><!-- /portfolio-item -->
+
+                        <div class="portfolio-item museum">
+                            <div class="portfolio-media hover-link">
+                                <img src="img/portfolio/6big.jpg" alt="" />
+                                <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">Architecture</a></h5>
+                        </div><!-- /portfolio-item -->
+
+                        <div class="portfolio-item urban">
+                            <div class="portfolio-media hover-link">
+                                <img src="img/portfolio/7big.jpg" alt="" />
+                                <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">Construction Services</a></h5>
+                        </div><!-- /portfolio-item -->
+
+                        <div class="portfolio-item house">
+                            <div class="portfolio-media hover-link">
+                                <img src="img/portfolio/8big.jpg" alt="" />
+                                <a href="work-single.html" class="overlay"><i class="fa fa-link"></i></a>
+                            </div><!-- /hover-link -->
+                            <h5 class="text-uppercase text-center"><a href="work-single.html">Building Engineering</a></h5>
+                        </div><!-- /portfolio-item -->
+                    </div><!-- /isotope-grid -->
+                </div><!-- /isotope-grid-row -->
+            </div><!-- /isotope-grid-wrapper -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / PORTFOLIO 1 -->
+
+    <!-- TESTIMONIAL - CLIENT -->
+  <!--  -->
+    <!-- END / TESTIMONIAL - CLIENT -->
+
+  
+    <!-- CLIENT -->
+    <section class="section bg-white pt-60 pb-60">
+        <div class="container">
+            <h2 class="section-header">Our Clients</h2>
+            <div class="client-slider">
+                {% for client in clients %}
+                    <div class="client-logo">
+                        <img src="../{{client.logo}}" alt="Client Logo" />
+                    </div>
+                {%endfor%}
+                
+             
+                <!-- <div class="client-logo">
+                    <img src="img/client/6.png" alt="" />
+                </div>/client-logo -->
+                <!-- <div class="client-logo">
+                    <img src="{% static 'img/client/4.png'%}" alt="Client 4" />
+                </div>/client-logo -->
+            </div><!-- /client-slider -->
+        </div><!-- /container -->
+    </section>
+    <!-- END / CLIENT -->
+
+
+{% endblock content %}
